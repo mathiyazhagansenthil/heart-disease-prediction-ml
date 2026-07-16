@@ -33,3 +33,6 @@ Also analyzed feature importance to identify which health metrics matter most.
 - Used GridSearchCV for hyperparameter tuning on Random Forest
 - Evaluated using accuracy, recall, and ROC-AUC (recall prioritized since 
   missing a true heart disease case is costlier than a false alarm)
+
+  <img width="607" height="453" alt="download" src="https://github.com/user-attachments/assets/e9612568-4016-4c7a-9c4f-665df8daca66" />
+

@@ -16,3 +16,20 @@ Python, pandas, scikit-learn, seaborn/matplotlib
 
 ## How to run
 Open Main.ipynb in Jupyter and run all cells.
+
+## Results
+Compared 6 models: Random Forest, Gradient Boosting, Naive Bayes, KNN, Logistic Regression, SVM
+
+Best model: Random Forest (tuned with GridSearchCV)
+- Accuracy: 98.5%
+- Recall: 98.6%
+- ROC-AUC: 0.999
+
+Also analyzed feature importance to identify which health metrics matter most.
+
+## Methodology
+- Split models into scale-sensitive (KNN, Logistic Regression, SVM — used StandardScaler) 
+  and scale-insensitive (tree-based models) groups
+- Used GridSearchCV for hyperparameter tuning on Random Forest
+- Evaluated using accuracy, recall, and ROC-AUC (recall prioritized since 
+  missing a true heart disease case is costlier than a false alarm)
